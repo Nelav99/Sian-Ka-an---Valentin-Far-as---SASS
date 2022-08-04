@@ -4,6 +4,10 @@
 /* Size */
 /* mobile */
 /* desktop */
+@import url("https://fonts.googleapis.com/css2? familia=Lato:ital,wght@0,100;0,400;1,100;1,400&family=Rambla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2? familia=Lato:ital,wght@0,100;0,400;1,100;1,400&family=Rambla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2? familia=Lato:ital,wght@0,100;0,400;1,100;1,400&family=Rambla:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2? familia=Lato:ital,wght@0,100;0,400;1,100;1,400&family=Rambla:wght@400;700&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -14,7 +18,22 @@ html {
   font-size: 62.5%;
 }
 
-/* Home Inicio */
+/* colors */
+/* fonts */
+/* Size */
+/* mobile */
+/* desktop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/*Header*/
 /* NavBar */
 .navBarH {
   background-color: rgba(39, 39, 39, 0.78);
@@ -60,6 +79,178 @@ html {
 }
 
 /*Fin NavBar*/
+@media (max-width: 480px) {
+  /* NavBar */
+  .navBarH .iconos-redes {
+    display: none;
+  }
+  /* Fin NavBar */
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* NavBar */
+  .navBarH .iconos-redes {
+    display: none;
+  }
+  /* Fin NavBar */
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* NavBar */
+  .navBarH {
+    padding: 0.5em 2em;
+  }
+  .navBarH #collapsibleNavbar {
+    align-items: center;
+    justify-content: flex-end;
+  }
+  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
+    padding: 3px;
+  }
+  .navBarH .iconos-redes {
+    display: none;
+  }
+  /* Fin NavBar */
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* NavBar */
+  .navBarH {
+    justify-content: space-between;
+    padding: 0.5em 2em;
+  }
+  .navBarH #collapsibleNavbar {
+    justify-content: space-around;
+  }
+  .navBarH .navbar-collapse .navbar-nav .nav-item {
+    padding: 3px;
+  }
+  .navBarH .iconos-redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .navBarH .iconos-redes .facebook {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .twitter {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .youtube {
+    font-size: 35px;
+    margin: 0 0 0 10px;
+  }
+  .navBarH .iconos-redes .iconosRedC {
+    color: #fff;
+  }
+  .navBarH .iconos-redes .iconosRedC:hover {
+    color: #FFA900;
+  }
+  /* Fin NavBar */
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* NavBar */
+  .navBarH {
+    padding: 0.5em 2em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .navBarH #collapsibleNavbar {
+    justify-content: center;
+  }
+  .navBarH #collapsibleNavbar .navbar-nav {
+    width: 100%;
+    justify-content: center;
+    margin: 0 5px;
+  }
+  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
+    padding: 3px 5px;
+    font-size: 26px;
+  }
+  .navBarH .iconos-redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .navBarH .iconos-redes .facebook {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .twitter {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .youtube {
+    font-size: 35px;
+    margin: 0 0 0 10px;
+  }
+  .navBarH .iconos-redes .iconosRedC {
+    color: #fff;
+  }
+  .navBarH .iconos-redes .iconosRedC:hover {
+    color: #FFA900;
+  }
+  /* Fin NavBar */
+}
+@media (min-width: 1280px) {
+  /* NavBar */
+  .navBarH {
+    padding: 0.5em 2em;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+  }
+  .navBarH #collapsibleNavbar {
+    justify-content: center;
+  }
+  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
+    padding: 3px;
+    font-size: 32px;
+  }
+  .navBarH .iconos-redes {
+    display: flex;
+    flex-direction: row;
+  }
+  .navBarH .iconos-redes .facebook {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .twitter {
+    font-size: 35px;
+    margin: 0 10px;
+  }
+  .navBarH .iconos-redes .youtube {
+    font-size: 35px;
+    margin: 0 0 0 10px;
+  }
+  .navBarH .iconos-redes .iconosRedC {
+    color: #fff;
+  }
+  .navBarH .iconos-redes .iconosRedC:hover {
+    color: #FFA900;
+  }
+  /* Fin NavBar */
+}
+/* colors */
+/* fonts */
+/* Size */
+/* mobile */
+/* desktop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Home Inicio */
 .bodyH {
   margin: 0;
   font-size: 1rem;
@@ -72,8 +263,6 @@ html {
   /* Contenido Principal */
   /*Form*/
   /* Fin Contenido Principal */
-  /* Footer */
-  /* Fin Footer */
 }
 .bodyH .containerH {
   background-color: rgba(39, 39, 39, 0.78);
@@ -199,14 +388,6 @@ html {
 .bodyH .cont-form .formulario .inputFormAl .aviso .politicas {
   color: #7E7BFF;
   padding-left: 5px;
-}
-.bodyH .footH {
-  color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 1.3rem;
-  margin: 1em;
-  display: flex;
-  justify-content: center;
 }
 
 /* Home Fin */
@@ -349,115 +530,6 @@ html {
 }
 
 /* Nosotros Fin */
-/* Footer */
-.footerN {
-  color: #fff;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  font-size: 20px;
-  width: 100%;
-  height: 100%;
-  margin: 20px 0 0 0;
-  display: flex;
-  flex-flow: column wrap;
-  background-color: rgba(39, 39, 39, 0.78);
-  background-size: 100%;
-}
-.footerN .logoText {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
-  align-content: center;
-  margin: 10px 0;
-}
-.footerN .logoText .logoFot {
-  width: 90%;
-  height: 100%;
-  margin: 10px;
-}
-.footerN .logoText .textfo {
-  padding: 10px 20px;
-  text-align: center;
-}
-.footerN .redes {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-}
-.footerN .redes h3 {
-  padding: 0 25px;
-}
-.footerN .redes .iFooter {
-  font-size: 40px;
-  text-align: center;
-  text-decoration: none;
-  color: #fff;
-  padding: 15px;
-}
-.footerN .redes .iFooter i {
-  color: #fff;
-  margin: 10px;
-}
-.footerN .redes .iFooter .icoFootH:hover {
-  color: #FFA900;
-}
-.footerN .contacto {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-}
-.footerN .contacto h3 {
-  padding: 0 25px;
-}
-.footerN .contacto p {
-  margin: 5px;
-  text-align: center;
-}
-.footerN .menuFo {
-  width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  align-content: center;
-  justify-content: center;
-}
-.footerN .menuFo h3 {
-  padding: 0 25px;
-}
-.footerN .menuFo .listFoot {
-  list-style: none;
-  text-decoration: none;
-  font-size: 18px;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #fff;
-  display: flex;
-  margin: 5px 55px;
-}
-.footerN .menuFo .listFoot:hover {
-  color: #FFA900;
-}
-.footerN .subFooter {
-  width: 100%;
-  height: 100%;
-  font-size: 14px;
-  margin-top: 10px;
-  margin-bottom: 10px;
-  justify-content: center;
-  text-align: center;
-}
-
-/* Fin Footer */
 /* Masterplan Inicio */
 .nosotrosM {
   margin: 0;
@@ -675,6 +747,21 @@ html {
 }
 
 /* Galeria Fin */
+/* colors */
+/* fonts */
+/* Size */
+/* mobile */
+/* desktop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
 @media (max-width: 480px) {
   * {
     margin: 0;
@@ -682,117 +769,7 @@ html {
     box-sizing: border-box;
   }
   /* Home Inicio */
-  /* NavBar */
-  .navBarH .iconos-redes {
-    display: none;
-  }
-  /* Fin NavBar */
   /* Home Fin */
-  /*Footer*/
-  .footerN {
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 20px;
-    width: 100%;
-    height: 100%;
-    margin: 20px 0 0 0;
-    display: flex;
-    flex-flow: column wrap;
-    background-color: rgba(39, 39, 39, 0.78);
-    background-size: 100%;
-  }
-  .footerN .logoText {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    justify-content: center;
-    align-content: center;
-    margin: 10px 0;
-  }
-  .footerN .logoText .logoFot {
-    width: 90%;
-    height: 100%;
-    margin: 10px;
-  }
-  .footerN .logoText .textfo {
-    padding: 10px 20px;
-    text-align: center;
-  }
-  .footerN .redes {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-  }
-  .footerN .redes .iFooter {
-    font-size: 40px;
-    text-align: center;
-    text-decoration: none;
-    color: #fff;
-    padding: 15px;
-  }
-  .footerN .redes .iFooter i {
-    color: #fff;
-    margin: 10px;
-  }
-  .footerN .redes .iFooter .icoFootH:hover {
-    color: #FFA900;
-  }
-  .footerN .redes h3,
-.footerN .contacto h3,
-.footerN .menuFo h3 {
-    padding: 0 25px;
-  }
-  .footerN .contacto {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-  }
-  .footerN .contacto p {
-    margin: 5px;
-    text-align: center;
-  }
-  .footerN .menuFo {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: nowrap;
-    align-content: center;
-    justify-content: center;
-  }
-  .footerN .menuFo .listFoot {
-    list-style: none;
-    text-decoration: none;
-    font-size: 18px;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    color: #fff;
-    display: flex;
-    margin: 5px 55px;
-  }
-  .footerN .subFooter {
-    width: 100%;
-    height: 100%;
-    font-size: 14px;
-    margin-top: 10px;
-    margin-bottom: 10px;
-    justify-content: center;
-    text-align: center;
-  }
-  .footerN .subFooter p {
-    margin-top: 0;
-    margin-bottom: 1rem;
-  }
-  /*Fin Footer*/
   /* Nosotros Inicio */
   .nosotrosB .container-nosotros .contenido h3 {
     display: none;
@@ -844,7 +821,7 @@ html {
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 {
     width: 300px;
-    height: 300px;
+    height: 250px;
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 #imgCarusel {
     width: 300px;
@@ -900,28 +877,29 @@ html {
 }
 @media (min-width: 480px) and (max-width: 768px) {
   /* Home Inicio */
-  /* NavBar */
-  .navBarH .iconos-redes {
-    display: none;
-  }
-  /* Fin NavBar */
   /* Contenido Principal */
   .bodyH .containerH .cont-form .inputFormAl .aviso {
     font-size: 1.7em;
     margin: 0 0 12px 0;
   }
   /* Fin Contenido Principal */
-  /* Footer */
-  .bodyH .footH {
-    font-size: 16px;
-    margin: 0;
-  }
-  .bodyH .footH .textFoot {
-    width: 100%;
-    text-align: center;
-  }
-  /* Fin Footer */
   /* Home Fin */
+  /* Nosotros Inicio */
+  .nosotrosB {
+    margin: 0;
+    padding: 0;
+    /* Contenido Principal */
+    /* segundoContenedor */
+    /*finSegundoContenedor*/
+    /* Fin Contenido Principal */
+  }
+  .nosotrosB .containerQueOfrecemos {
+    padding: 0;
+  }
+  .nosotrosB .containerQueOfrecemos .imgQueO {
+    padding: 0;
+  }
+  /* Nosotros Fin */
   /* Masterplan Inicio */
   /* Contenido Principal */
   .nosotrosM .tituloM {
@@ -991,7 +969,7 @@ html {
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 {
     width: 300px;
-    height: 400px;
+    height: 300px;
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 #imgCarusel {
     width: 100%;
@@ -1047,28 +1025,11 @@ html {
 }
 @media (min-width: 768px) and (max-width: 992px) {
   /* Home Inicio */
-  /* NavBar */
-  .navBarH {
-    padding: 0.5em 2em;
-  }
-  .navBarH #collapsibleNavbar {
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
-    padding: 3px;
-  }
-  .navBarH .iconos-redes {
-    display: none;
-  }
-  /* Fin NavBar */
   /* Contenido Principal */
   .bodyH {
     margin: 0;
     padding: 0;
     /* Fin Contenido Principal */
-    /* Footer */
-    /* Fin Footer */
   }
   .bodyH .containerH .textosInicio .titleText {
     font-size: 46px;
@@ -1104,14 +1065,6 @@ html {
   .bodyH .containerH .cont-form .formulario .inputFormAl .aviso {
     font-size: 20px;
     margin: 10px 25px 25px 25px;
-  }
-  .bodyH .footH {
-    font-size: 14px;
-    margin: 0;
-  }
-  .bodyH .footH .textFoot {
-    width: 100%;
-    text-align: center;
   }
   /* Home Fin */
   /* Nosotros Inicio */
@@ -1163,21 +1116,6 @@ html {
   .nosotrosB .containerQueOfrecemos .textQueO dd {
     font-size: 24px;
   }
-  /* Footer */
-  .footerN .logoText .logoFot {
-    width: 50%;
-    height: 80%;
-    margin: 10px;
-  }
-  .footerN .logoText .textfo {
-    font-size: 28px;
-  }
-  .footerN .redes h3,
-.footerN .contacto h3,
-.footerN .menuFo h3 {
-    font-size: 24px;
-  }
-  /* Fin Footer */
   /* Nosotros Fin */
   /* Masterplan Inicio */
   /* Contenido Principal */
@@ -1236,7 +1174,7 @@ html {
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 {
     width: 300px;
-    height: 400px;
+    height: 380px;
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 #imgCarusel {
     width: 100%;
@@ -1308,45 +1246,9 @@ html {
 }
 @media (min-width: 992px) and (max-width: 1024px) {
   /* Home Inicio */
-  /* NavBar */
-  .navBarH {
-    justify-content: space-between;
-    padding: 0.5em 2em;
-  }
-  .navBarH #collapsibleNavbar {
-    justify-content: space-around;
-  }
-  .navBarH .navbar-collapse .navbar-nav .nav-item {
-    padding: 3px;
-  }
-  .navBarH .iconos-redes {
-    display: flex;
-    flex-direction: row;
-  }
-  .navBarH .iconos-redes .facebook {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .twitter {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .youtube {
-    font-size: 35px;
-    margin: 0 0 0 10px;
-  }
-  .navBarH .iconos-redes .iconosRedC {
-    color: #fff;
-  }
-  .navBarH .iconos-redes .iconosRedC:hover {
-    color: #FFA900;
-  }
-  /* Fin NavBar */
   /* Contenido Principal */
   .bodyH {
     /* Fin Contenido Principal */
-    /* Footer */
-    /* Fin Footer */
   }
   .bodyH .containerH .textosInicio .titleText {
     font-size: 48px;
@@ -1387,12 +1289,6 @@ html {
     font-size: 18px;
     margin: 10px 25px 25px 25px;
   }
-  .bodyH .footH {
-    margin: 0;
-  }
-  .bodyH .footH .textFoot {
-    font-size: 16px;
-  }
   /* Home Fin */
   /* Nosotros Inicio */
   /* Contenido Principal */
@@ -1404,79 +1300,6 @@ html {
     padding: 0;
   }
   /* Fin Contenido Principal */
-  /* Footer */
-  .footerN {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  .footerN .redes h3,
-.footerN .contacto h3,
-.footerN .menuFo h3 {
-    padding: 0;
-    margin: 20px 0;
-  }
-  .footerN .redes {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
-  }
-  .footerN .redes .iFooter {
-    font-size: 55px;
-    padding: 15px;
-  }
-  .footerN .redes .iFooter i {
-    color: #fff;
-    margin: 0 5px;
-  }
-  .footerN .redes .iFooter .icoFootH:hover {
-    width: auto;
-    height: auto;
-    color: #FFA900;
-  }
-  .footerN .contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .contacto p {
-    margin: 5px;
-  }
-  .footerN .menuFo {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .menuFo .listFoot {
-    padding: 0;
-    margin: 3px 30px;
-  }
-  .footerN .menuFo .listFoot:hover {
-    color: #FFA900;
-  }
-  .footerN .subFooter {
-    margin: 10px;
-  }
-  .footerN .subFooter p {
-    text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-  /* Fin Footer */
   /* Nosotros Fin */
   /* Masterplan Inicio */
   /* Contenido Principal */
@@ -1633,66 +1456,19 @@ html {
 }
 @media (min-width: 1024px) and (max-width: 1280px) {
   /* Home Inicio */
-  /* NavBar */
-  .navBarH {
-    padding: 0.5em 2em;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-  .navBarH #collapsibleNavbar {
-    justify-content: center;
-  }
-  .navBarH #collapsibleNavbar .navbar-nav {
-    width: 100%;
-    justify-content: center;
-    margin: 0 5px;
-  }
-  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
-    padding: 3px 5px;
-    font-size: 26px;
-  }
-  .navBarH .iconos-redes {
-    display: flex;
-    flex-direction: row;
-  }
-  .navBarH .iconos-redes .facebook {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .twitter {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .youtube {
-    font-size: 35px;
-    margin: 0 0 0 10px;
-  }
-  .navBarH .iconos-redes .iconosRedC {
-    color: #fff;
-  }
-  .navBarH .iconos-redes .iconosRedC:hover {
-    color: #FFA900;
-  }
-  /* Fin NavBar */
   .bodyH {
     /*ContenedorPrincipalHome*/
     /*finForm*/
     /*finContenidoPrincipal*/
-    /*footer*/
-    /*finFooter*/
   }
   .bodyH .containerH {
     background-color: rgba(39, 39, 39, 0.78);
     border-radius: 25px;
     width: auto;
-    height: auto;
+    height: 100%;
     display: flex;
     flex-direction: row;
-    margin: 20px 20px 10px 20px;
+    margin: 20px 20px 3px 20px;
     /*Form*/
   }
   .bodyH .containerH .textosInicio {
@@ -1740,16 +1516,6 @@ html {
   .bodyH .containerH .cont-form .formulario .inputFormAl .aviso {
     font-size: 15px;
     margin: 8px;
-  }
-  .bodyH .footH {
-    margin: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-end;
-  }
-  .bodyH .footH .textFoot {
-    font-size: 22px;
   }
   /* Home Fin */
   /* Nosotros Inicio */
@@ -1893,90 +1659,6 @@ html {
     border-radius: 0 0 25px 0;
   }
   /* Fin Contenido Principal */
-  /* Footer */
-  .footerN {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  .footerN .logoText .logoFot {
-    width: 50%;
-    height: 80%;
-    margin: 10px;
-  }
-  .footerN .logoText .textfo {
-    font-size: 30px;
-    margin: 10px;
-  }
-  .footerN .redes h3,
-.footerN .contacto h3,
-.footerN .menuFo h3 {
-    font-size: 28px;
-    padding: 0;
-    margin: 20px 0;
-  }
-  .footerN .redes {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
-  }
-  .footerN .redes .iFooter {
-    font-size: 55px;
-    padding: 15px;
-  }
-  .footerN .redes .iFooter i {
-    color: #fff;
-    margin: 0 5px;
-  }
-  .footerN .redes .iFooter .icoFootH:hover {
-    width: auto;
-    height: auto;
-    color: #000;
-    background-color: #FFA900;
-  }
-  .footerN .contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .contacto p {
-    margin: 5px;
-  }
-  .footerN .menuFo {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .menuFo .listFoot {
-    padding: 0;
-    margin: 3px 30px;
-  }
-  .footerN .menuFo .listFoot:hover {
-    color: #FFA900;
-  }
-  .footerN .subFooter {
-    margin: 10px;
-  }
-  .footerN .subFooter p {
-    text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-  /* Fin Footer */
   /* Nosotros Fin */
   /* Masterplan Inicio */
   /* Contenido Principal */
@@ -2088,7 +1770,7 @@ html {
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 {
     width: 300px;
-    height: 410px;
+    height: 380px;
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 #imgCarusel {
     width: 100%;
@@ -2102,32 +1784,42 @@ html {
   .galeriaB .containerImg {
     width: auto;
     height: auto;
+    display: block;
     margin: 30px 20px;
+    padding: 0;
   }
   .galeriaB .containerImg .row {
     margin: 0;
   }
-  .galeriaB .containerImg .row img {
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 {
+    padding: 0;
+  }
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 img,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 img {
     width: 100%;
     height: 100%;
     margin: 0;
     padding: 0;
   }
-  .galeriaB .containerImg .row .imgB1 {
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 .imgB1,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 .imgB1 {
     border-radius: 25px 0 0 0;
   }
-  .galeriaB .containerImg .row .imgB2 {
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 .imgB2,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 .imgB2 {
     border-radius: 0;
   }
-  .galeriaB .containerImg .row .imgB3 {
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 .imgB3,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 .imgB3 {
     border-radius: 0 25px 0 0;
   }
-  .galeriaB .containerImg .row .imgB7 {
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 .imgB7,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 .imgB7 {
     border-radius: 0 0 0 25px;
   }
-  .galeriaB .containerImg .row .imgB9 {
-    width: 100%;
-    height: 100%;
+  .galeriaB .containerImg .row .col-sm-12.col-md-6.col-lg-4 .imgB9,
+.galeriaB .containerImg .row .col-sm-12.col-sm-12.col-lg-4 .imgB9 {
     border-radius: 0 0 25px 0;
   }
   /* Fin Contenido Principal */
@@ -2135,51 +1827,9 @@ html {
 }
 @media (min-width: 1280px) {
   /* Home Inicio */
-  /* NavBar */
-  .navBarH {
-    padding: 0.5em 2em;
-    display: flex;
-    flex-direction: row;
-    align-content: center;
-    align-items: center;
-    justify-content: space-between;
-    flex-wrap: nowrap;
-  }
-  .navBarH #collapsibleNavbar {
-    justify-content: center;
-  }
-  .navBarH #collapsibleNavbar .navbar-nav .nav-item {
-    padding: 3px;
-    font-size: 32px;
-  }
-  .navBarH .iconos-redes {
-    display: flex;
-    flex-direction: row;
-  }
-  .navBarH .iconos-redes .facebook {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .twitter {
-    font-size: 35px;
-    margin: 0 10px;
-  }
-  .navBarH .iconos-redes .youtube {
-    font-size: 35px;
-    margin: 0 0 0 10px;
-  }
-  .navBarH .iconos-redes .iconosRedC {
-    color: #fff;
-  }
-  .navBarH .iconos-redes .iconosRedC:hover {
-    color: #FFA900;
-  }
-  /* Fin NavBar */
   /*ContenedorPrincipal*/
   .bodyH {
     /* Fin Contenido Principal */
-    /* Footer */
-    /* Fin Footer */
   }
   .bodyH .containerH {
     background-color: rgba(39, 39, 39, 0.78);
@@ -2188,7 +1838,7 @@ html {
     height: 82.5vh;
     display: flex;
     flex-direction: row;
-    margin: 25px;
+    margin: 25px 25px 5px 25px;
     /*Form*/
     /*finForm*/
   }
@@ -2304,18 +1954,6 @@ html {
     color: #7E7BFF;
     padding-left: 5px;
   }
-  .bodyH .footH {
-    color: #fff;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-    font-size: 22px;
-    margin: 0;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-  }
-  .bodyH .footH .textFoot {
-    margin: 0;
-  }
   /* Home Fin */
   /* Nosotros Inicio */
   .nosotrosB {
@@ -2399,6 +2037,7 @@ html {
     display: flex;
     flex-direction: row;
     margin: 30px 20px;
+    padding: 0;
   }
   .nosotrosB .containerQueOfrecemos .textQueO {
     width: 100%;
@@ -2458,90 +2097,6 @@ html {
     height: 100%;
     border-radius: 0 0 25px 0;
   }
-  /* Footer */
-  .footerN {
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: space-around;
-    align-content: flex-start;
-    align-items: flex-start;
-  }
-  .footerN .logoText .logoFot {
-    width: 50%;
-    height: 80%;
-    margin: 10px;
-  }
-  .footerN .logoText .textfo {
-    font-size: 30px;
-    margin: 10px;
-  }
-  .footerN .redes h3,
-.footerN .contacto h3,
-.footerN .menuFo h3 {
-    font-size: 28px;
-    padding: 0;
-    margin: 20px 0;
-  }
-  .footerN .redes {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    margin: 10px 30px;
-  }
-  .footerN .redes .iFooter {
-    font-size: 55px;
-    padding: 15px;
-  }
-  .footerN .redes .iFooter i {
-    color: #fff;
-    margin: 0 5px;
-  }
-  .footerN .redes .iFooter .icoFootH:hover {
-    width: auto;
-    height: auto;
-    color: #000;
-    background-color: #FFA900;
-  }
-  .footerN .contacto {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .contacto p {
-    margin: 5px;
-  }
-  .footerN .menuFo {
-    width: auto;
-    height: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    margin: 10px 30px;
-  }
-  .footerN .menuFo .listFoot {
-    padding: 0;
-    margin: 3px 30px;
-  }
-  .footerN .menuFo .listFoot:hover {
-    color: #FFA900;
-  }
-  .footerN .subFooter {
-    margin: 10px;
-  }
-  .footerN .subFooter p {
-    text-align: center;
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: nowrap;
-    flex-direction: row;
-  }
-  /* Fin Footer */
   /* Nosotros Fin */
   /* Masterplan Inicio */
   /* Contenido Principal */
@@ -2660,7 +2215,7 @@ html {
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 {
     width: 300px;
-    height: 600px;
+    height: 570px;
   }
   .beneficiosB .containerBeneficios .row .col-8.col-md-8.col-lg-5.col-xl-6.px-0.px-md-5 #imgCarusel {
     width: 100%;
@@ -2717,4 +2272,579 @@ html {
   }
   /* Fin Contenido Principal */
   /* Galeria Fin */
+}
+/* colors */
+/* fonts */
+/* Size */
+/* mobile */
+/* desktop */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+/* Footer Home*/
+.footH {
+  height: 100%;
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3rem;
+  margin: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footH .textFoot {
+  margin: 0;
+  padding: 0;
+}
+
+/* Fin Footer Home */
+/* Footer Paginas*/
+.footerN {
+  color: #fff;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 20px;
+  width: 100%;
+  height: 100%;
+  margin: 20px 0 0 0;
+  display: flex;
+  flex-flow: column wrap;
+  background-color: rgba(39, 39, 39, 0.78);
+  background-size: 100%;
+}
+.footerN .logoText {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  margin: 10px 0;
+}
+.footerN .logoText .logoFot {
+  width: 90%;
+  height: 100%;
+  margin: 10px;
+}
+.footerN .logoText .textfo {
+  padding: 10px 20px;
+  text-align: center;
+}
+.footerN .redes {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+.footerN .redes h3 {
+  padding: 0 25px;
+}
+.footerN .redes .iFooter {
+  font-size: 40px;
+  text-align: center;
+  text-decoration: none;
+  color: #fff;
+  padding: 15px;
+}
+.footerN .redes .iFooter i {
+  color: #fff;
+  margin: 10px;
+}
+.footerN .redes .iFooter .icoFootH:hover {
+  color: #FFA900;
+}
+.footerN .contacto {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+.footerN .contacto h3 {
+  padding: 0 25px;
+}
+.footerN .contacto p {
+  margin: 5px;
+  text-align: center;
+}
+.footerN .menuFo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  align-content: center;
+  justify-content: center;
+}
+.footerN .menuFo h3 {
+  padding: 0 25px;
+}
+.footerN .menuFo .listFoot {
+  list-style: none;
+  text-decoration: none;
+  font-size: 18px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #fff;
+  display: flex;
+  margin: 5px 55px;
+}
+.footerN .menuFo .listFoot:hover {
+  color: #FFA900;
+}
+.footerN .subFooter {
+  width: 100%;
+  height: 100%;
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+  text-align: center;
+}
+
+/* Fin Footer Paginas*/
+@media (max-width: 480px) {
+  /*Footer*/
+  .footerN {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: rgba(39, 39, 39, 0.78);
+    background-size: 100%;
+  }
+  .footerN .logoText {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    margin: 10px 0;
+  }
+  .footerN .logoText .logoFot {
+    width: 90%;
+    height: 100%;
+    margin: 10px;
+  }
+  .footerN .logoText .textfo {
+    padding: 10px 20px;
+    text-align: center;
+  }
+  .footerN .redes {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .footerN .redes .iFooter {
+    font-size: 40px;
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    padding: 15px;
+  }
+  .footerN .redes .iFooter i {
+    color: #fff;
+    margin: 10px;
+  }
+  .footerN .redes .iFooter .icoFootH:hover {
+    color: #FFA900;
+  }
+  .footerN .redes h3,
+.footerN .contacto h3,
+.footerN .menuFo h3 {
+    padding: 0 25px;
+  }
+  .footerN .contacto {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .footerN .contacto p {
+    margin: 5px;
+    text-align: center;
+  }
+  .footerN .menuFo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+  }
+  .footerN .menuFo .listFoot {
+    list-style: none;
+    text-decoration: none;
+    font-size: 18px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    color: #fff;
+    display: flex;
+    margin: 5px 55px;
+  }
+  .footerN .subFooter {
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+    text-align: center;
+  }
+  .footerN .subFooter p {
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+  /*Fin Footer*/
+}
+@media (min-width: 480px) and (max-width: 768px) {
+  /* Footer Home*/
+  .footH {
+    font-size: 16px;
+    margin: 0;
+    align-items: center;
+  }
+  .footH .textFoot {
+    width: 100%;
+    text-align: center;
+  }
+  /* Fin Footer Home*/
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  /* Footer Home*/
+  .footH {
+    font-size: 14px;
+    margin: 0;
+    align-items: center;
+  }
+  .footH .textFoot {
+    width: 100%;
+    text-align: center;
+  }
+  /* Fin Footer Home */
+  /* Footer Paginas */
+  .footerN .logoText .logoFot {
+    width: 50%;
+    height: 80%;
+    margin: 10px;
+  }
+  .footerN .logoText .textfo {
+    font-size: 28px;
+  }
+  .footerN .redes h3,
+.footerN .contacto h3,
+.footerN .menuFo h3 {
+    font-size: 24px;
+  }
+  /* Fin Footer Paginas */
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  /* Footer Home*/
+  .footH {
+    margin: 0;
+    align-items: center;
+  }
+  .footH .textFoot {
+    font-size: 16px;
+  }
+  /* Fin Footer Home*/
+  /* Footer Paginas */
+  .footerN {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .footerN .redes h3,
+.footerN .contacto h3,
+.footerN .menuFo h3 {
+    padding: 0;
+    margin: 20px 0;
+  }
+  .footerN .redes {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+  }
+  .footerN .redes .iFooter {
+    font-size: 55px;
+    padding: 15px;
+  }
+  .footerN .redes .iFooter i {
+    color: #fff;
+    margin: 0 5px;
+  }
+  .footerN .redes .iFooter .icoFootH:hover {
+    width: auto;
+    height: auto;
+    color: #FFA900;
+  }
+  .footerN .contacto {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .contacto p {
+    margin: 5px;
+  }
+  .footerN .menuFo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .menuFo .listFoot {
+    padding: 0;
+    margin: 3px 30px;
+  }
+  .footerN .menuFo .listFoot:hover {
+    color: #FFA900;
+  }
+  .footerN .subFooter {
+    margin: 10px;
+  }
+  .footerN .subFooter p {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  /* Fin Footer Paginas*/
+}
+@media (min-width: 1024px) and (max-width: 1280px) {
+  /* Footer Home*/
+  .footH {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footH .textFoot {
+    font-size: 16px;
+    margin: 0;
+  }
+  /* Fin Footer Home*/
+  /* Footer Paginas*/
+  .footerN {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .footerN .logoText .logoFot {
+    width: 50%;
+    height: 80%;
+    margin: 10px;
+  }
+  .footerN .logoText .textfo {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .footerN .redes h3,
+.footerN .contacto h3,
+.footerN .menuFo h3 {
+    font-size: 28px;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .footerN .redes {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+  }
+  .footerN .redes .iFooter {
+    font-size: 55px;
+    padding: 15px;
+  }
+  .footerN .redes .iFooter i {
+    color: #fff;
+    margin: 0 5px;
+  }
+  .footerN .redes .iFooter .icoFootH:hover {
+    width: auto;
+    height: auto;
+    color: #000;
+    background-color: #FFA900;
+  }
+  .footerN .contacto {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .contacto p {
+    margin: 5px;
+  }
+  .footerN .menuFo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .menuFo .listFoot {
+    padding: 0;
+    margin: 3px 30px;
+  }
+  .footerN .menuFo .listFoot:hover {
+    color: #FFA900;
+  }
+  .footerN .subFooter {
+    margin: 10px;
+  }
+  .footerN .subFooter p {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  /* Fin Footer Paginas*/
+}
+@media (min-width: 1280px) {
+  /* Footer Home*/
+  .footH {
+    color: #fff;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    font-size: 22px;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+  .footH .textFoot {
+    margin: 0;
+  }
+  /* Fin Footer Home*/
+  /* Footer Paginas*/
+  .footerN {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+  .footerN .logoText .logoFot {
+    width: 50%;
+    height: 80%;
+    margin: 10px;
+  }
+  .footerN .logoText .textfo {
+    font-size: 30px;
+    margin: 10px;
+  }
+  .footerN .redes h3,
+.footerN .contacto h3,
+.footerN .menuFo h3 {
+    font-size: 28px;
+    padding: 0;
+    margin: 20px 0;
+  }
+  .footerN .redes {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 30px;
+  }
+  .footerN .redes .iFooter {
+    font-size: 55px;
+    padding: 15px;
+  }
+  .footerN .redes .iFooter i {
+    color: #fff;
+    margin: 0 5px;
+  }
+  .footerN .redes .iFooter .icoFootH:hover {
+    width: auto;
+    height: auto;
+    color: #000;
+    background-color: #FFA900;
+  }
+  .footerN .contacto {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .contacto p {
+    margin: 5px;
+  }
+  .footerN .menuFo {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin: 10px 30px;
+  }
+  .footerN .menuFo .listFoot {
+    padding: 0;
+    margin: 3px 30px;
+  }
+  .footerN .menuFo .listFoot:hover {
+    color: #FFA900;
+  }
+  .footerN .subFooter {
+    margin: 10px;
+  }
+  .footerN .subFooter p {
+    text-align: center;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+  }
+  /* Fin Footer Paginas*/
 }/*# sourceMappingURL=styles.css.map */

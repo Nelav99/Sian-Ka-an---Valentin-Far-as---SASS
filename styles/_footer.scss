@@ -1,0 +1,585 @@
+@import 'variables';
+
+/* Footer Home*/
+.footH {
+    height: 100%;
+    color: $white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.3rem;
+    margin: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .textFoot {
+        margin: 0;
+        padding: 0;
+    }
+}
+/* Fin Footer Home */
+
+/* Footer Paginas*/
+.footerN {
+    color: $white;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 20px;
+    width: 100%;
+    height: 100%;
+    margin: 20px 0 0 0;
+    display: flex;
+    flex-flow: column wrap;
+    background-color: $secundario-negro;
+    background-size: 100%;
+    .logoText {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: center;
+        justify-content: center;
+        align-content: center;
+        margin: 10px 0;
+        .logoFot {
+            width: 90%;
+            height: 100%;
+            margin: 10px;
+        }
+        .textfo {
+            padding: 10px 20px;
+            text-align: center;
+        }
+    }
+    .redes {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        h3 {
+            padding: 0 25px;
+        }
+        .iFooter {
+            font-size: 40px;
+            text-align: center;
+            text-decoration: none;
+            color: $white;
+            padding: 15px;
+            i {
+                color: $white;
+                margin: 10px;
+            }
+            .icoFootH:hover {
+                color: $primario-naranja;
+            }
+        }
+    }
+    .contacto {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        h3 {
+            padding: 0 25px;
+        }
+        p {
+            margin: 5px;
+            text-align: center;
+        }
+    }
+    .menuFo {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-content: center;
+        justify-content: center;
+        h3 {
+            padding: 0 25px;
+        }
+        .listFoot {
+            list-style: none;
+            text-decoration: none;
+            font-size: 18px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            color: $white;
+            display: flex;
+            margin: 5px 55px;
+        }
+        .listFoot:hover {
+            color: $primario-naranja;
+        }
+    }
+    .subFooter {
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        justify-content: center;
+        text-align: center;
+    }
+}
+/* Fin Footer Paginas*/
+
+@media (max-width: 480px) { 
+    /*Footer*/
+    .footerN {
+        color: $white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: 20px;
+        width: 100%;
+        height: 100%;
+        margin: 20px 0 0 0;
+        display: flex;
+        flex-flow: column wrap;
+        background-color: $secundario-negro;
+        background-size: 100%;
+        .logoText {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-flow: column nowrap;
+            align-items: center;
+            justify-content: center;
+            align-content: center;
+            margin: 10px 0;
+            .logoFot {
+                width: 90%;
+                height: 100%;
+                margin: 10px;
+            }
+            .textfo {
+                padding: 10px 20px;
+                text-align: center;
+            }
+        }
+        .redes {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            .iFooter {
+                font-size: 40px;
+                text-align: center;
+                text-decoration: none;
+                color: $white;
+                padding: 15px;
+                i {
+                    color: $white;
+                    margin: 10px;
+                }
+                .icoFootH:hover {
+                    color: $primario-naranja;
+                }
+            }
+        }
+        .redes,
+        .contacto,
+        .menuFo {
+            h3{
+                padding: 0 25px;
+            }
+        }
+        .contacto {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            p {
+                margin: 5px;
+                text-align: center;
+            }
+        }
+        .menuFo {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-content: center;
+            justify-content: center;
+            .listFoot {
+                list-style: none;
+                text-decoration: none;
+                font-size: 18px;
+                font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+                color: $white;
+                display: flex;
+                margin: 5px 55px;
+            }
+        }
+        .subFooter {
+            width: 100%;
+            height: 100%;
+            font-size: 14px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            justify-content: center;
+            text-align: center;
+            p {
+                margin-top: 0;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+/*Fin Footer*/
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    /* Footer Home*/
+    .footH {
+        font-size: $fontSmallMobile;
+        margin: 0;
+        align-items: center;
+        .textFoot {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    /* Fin Footer Home*/
+}
+
+@media (min-width: 768px) and (max-width: 992px) { 
+    /* Footer Home*/
+    .footH {
+        font-size: 14px;
+        margin: 0;
+        align-items: center;
+        .textFoot {
+            width: 100%;
+            text-align: center;
+        }
+    }
+    /* Fin Footer Home */
+    /* Footer Paginas */
+    .footerN {
+        .logoText {
+            .logoFot {
+                width: 50%;
+                height: 80%;
+                margin: 10px;
+            }
+            .textfo {
+                font-size: 28px;
+            }
+        }
+        .redes,
+        .contacto,
+        .menuFo {
+            h3 {
+                font-size: 24px;
+            }
+        }
+    }
+    /* Fin Footer Paginas */
+}
+
+@media (min-width: 992px) and (max-width: 1024px) { 
+    /* Footer Home*/
+    .footH {
+        margin: 0;
+        align-items: center;
+        .textFoot {
+            font-size: 16px;
+        }
+    }
+    /* Fin Footer Home*/
+    /* Footer Paginas */
+    .footerN {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: flex-start;
+        .redes,
+        .contacto,
+        .menuFo {
+            h3 {
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+        .redes {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 30px;
+            .iFooter {
+                font-size: 55px;
+                padding: 15px;
+                i {
+                    color: $white;
+                    margin: 0 5px;
+                }
+                .icoFootH:hover {
+                    width: auto;
+                    height: auto;
+                    color: $primario-naranja;
+                }
+            }
+        }
+        .contacto {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            p {
+                margin: 5px;
+            }
+        }
+        .menuFo {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            .listFoot {
+                padding: 0;
+                margin: 3px 30px;
+            }
+            .listFoot:hover {
+                color: $primario-naranja;
+            }
+        }
+        .subFooter {
+            margin: 10px;
+            p {
+                text-align: center;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                flex-direction: row;
+            }
+        }
+    }
+    /* Fin Footer Paginas*/
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    /* Footer Home*/
+    .footH {
+        color: $white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .textFoot {
+            font-size: 16px;
+            margin: 0;
+        }
+    }
+    /* Fin Footer Home*/
+    /* Footer Paginas*/
+    .footerN {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: flex-start;
+        .logoText {
+            .logoFot {
+                width: 50%;
+                height: 80%;
+                margin: 10px;
+            }
+            .textfo {
+                font-size: 30px;
+                margin: 10px;
+            }
+        }
+        .redes,
+        .contacto,
+        .menuFo {
+            h3 {
+                font-size: 28px;
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+        .redes {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 30px;
+            .iFooter {
+                font-size: 55px;
+                padding: 15px;
+                i {
+                    color: $white;
+                    margin: 0 5px;
+                }
+                .icoFootH:hover {
+                    width: auto;
+                    height: auto;
+                    color: $black;
+                    background-color: $primario-naranja;
+                }
+            }
+        }
+        .contacto {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            p {
+                margin: 5px;
+            }
+        }
+        .menuFo {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            .listFoot {
+                padding: 0;
+                margin: 3px 30px;
+            }
+            .listFoot:hover {
+                color: $primario-naranja;
+            }
+        }
+        .subFooter {
+            margin: 10px;
+            p {
+                text-align: center;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                flex-direction: row;
+            }
+        }
+    }
+    /* Fin Footer Paginas*/
+}
+
+@media (min-width: 1280px) {
+    /* Footer Home*/
+    .footH {
+        color: $white;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        font-size: $fontSmallDesktop;
+        margin: 0;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        .textFoot {
+            margin: 0;
+        }
+    }
+    /* Fin Footer Home*/
+    /* Footer Paginas*/
+    .footerN {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-content: flex-start;
+        align-items: flex-start;
+        .logoText {
+            .logoFot {
+                width: 50%;
+                height: 80%;
+                margin: 10px;
+            }
+            .textfo {
+                font-size: 30px;
+                margin: 10px;
+            }
+        }
+        .redes,
+        .contacto,
+        .menuFo {
+            h3 {
+                font-size: 28px;
+                padding: 0;
+                margin: 20px 0;
+            }
+        }
+        .redes {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            margin: 10px 30px;
+            .iFooter {
+                font-size: 55px;
+                padding: 15px;
+                i {
+                    color: $white;
+                    margin: 0 5px;
+                }
+                .icoFootH:hover {
+                    width: auto;
+                    height: auto;
+                    color: $black;
+                    background-color: $primario-naranja;
+                }
+            }
+        }
+        .contacto {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            p {
+                margin: 5px;
+            }
+        }
+        .menuFo {
+            width: auto;
+            height: auto;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            margin: 10px 30px;
+            .listFoot {
+                padding: 0;
+                margin: 3px 30px;
+            }
+            .listFoot:hover {
+                color: $primario-naranja;
+            }
+        }
+        .subFooter {
+            margin: 10px;
+            p {
+                text-align: center;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: nowrap;
+                flex-direction: row;
+            }
+        }
+    }
+    /* Fin Footer Paginas*/
+}

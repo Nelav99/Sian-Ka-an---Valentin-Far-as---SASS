@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2? familia=Lato:ital,wght@0,100;0,400;1,100;1,400&family=Rambla:wght@400;700&display=swap');
+
+/* colors */
+$primario-naranja: #FFA900;
+$secundario-negro: rgba(39, 39, 39, 0.78);
+$white: #fff;
+$black: #000;
+/* fonts */
+$primary-font: 'Rambla', sans-serif;
+$secondary-font: 'Lato', sans-serif;
+$body-font: 'Lato', sans-serif;
+/* Size */
+/* mobile */
+$fontTitleMobile: 36px;
+$fontSubtitleMobile: 28px;
+$fontBodyMobile: 22px;
+$fontSmallMobile: 16px;
+/* desktop */
+$fontTitleDesktop: 55px;
+$fontSubtitleDesktop: 40px;
+$fontBodyDesktop: 30px;
+$fontSmallDesktop: 22px;
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}

@@ -1,0 +1,227 @@
+@import "variables";
+
+/*Header*/
+/* NavBar */
+.navBarH {
+    background-color: rgba(39, 39, 39, 0.78);
+    padding: 2em;
+    /* Logo */
+    .navbar-brand {
+        .logoH {
+            width: 200px;
+            height: 35px;
+        }
+    }
+    /*Fin Logo*/
+    /*boton hamburguesa*/
+    .navbar-toggler {
+        font-size: 2em;
+        color: #f9f9f9;
+        border-color: rgba(255,255,255,.4);
+    }
+    /*Fin Boton Hamburguesa*/
+    /* Menu */
+    .navbar-collapse {
+        padding-top: 5px;
+        .navbar-nav {
+            .nav-item {
+                font-size: $fontBodyMobile ;
+                color: white;
+                padding: 3px 0;
+                margin: 0px;
+                .nav-link {
+                    color: $white;
+                    display: block;
+                    padding: .5rem;
+                }
+                .nav-link:focus,
+                .nav-link:hover {
+                    color: $primario-naranja;
+                }
+            }
+        }
+    }
+    /*Fin Menu*/
+    /*Iconos*/
+    div {
+        .iconos-redes {
+            display: none;
+        }
+    }
+    /*Fin Iconos*/
+}
+/*Fin NavBar*/
+
+@media (max-width: 480px) {
+    /* NavBar */
+    .navBarH {
+        .iconos-redes {
+            display: none;
+        }
+    }
+    /* Fin NavBar */
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+    /* NavBar */
+    .navBarH {
+        .iconos-redes {
+            display: none;
+        }
+    }
+    /* Fin NavBar */
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+    /* NavBar */
+    .navBarH {
+        padding: .5em 2em;
+        #collapsibleNavbar {
+            align-items: center;
+            justify-content: flex-end;
+            .navbar-nav {
+                .nav-item {
+                    padding: 3px;
+                }
+            }
+        }
+        .iconos-redes {
+            display: none;
+        }
+    }
+    /* Fin NavBar */
+}
+
+@media (min-width: 992px) and (max-width: 1024px) {
+    /* NavBar */
+    .navBarH {
+        justify-content: space-between;
+        padding: .5em 2em;
+        #collapsibleNavbar {
+            justify-content: space-around;
+        }
+        .navbar-collapse {
+            .navbar-nav {
+                .nav-item {
+                    padding: 3px;
+                }
+            }
+        }
+        .iconos-redes {
+            display: flex;
+            flex-direction: row;
+            .facebook {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .twitter {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .youtube {
+                font-size: 35px;
+                margin: 0 0 0 10px;
+            }
+            .iconosRedC {
+                color: $white;
+            }
+            .iconosRedC:hover {
+                color: $primario-naranja;
+            }
+        }
+    }
+    /* Fin NavBar */
+}
+
+@media (min-width: 1024px) and (max-width: 1280px) {
+    /* NavBar */
+    .navBarH {
+        padding: .5em 2em;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        #collapsibleNavbar {
+            justify-content: center;
+            .navbar-nav {
+                width: 100%;
+                justify-content: center;
+                margin: 0 5px;
+                .nav-item {
+                    padding: 3px 5px;
+                    font-size: 26px;
+                }
+            }
+        }
+        .iconos-redes {
+            display: flex;
+            flex-direction: row;
+            .facebook {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .twitter {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .youtube {
+                font-size: 35px;
+                margin: 0 0 0 10px;
+            }
+            .iconosRedC {
+                color: $white;
+            }
+            .iconosRedC:hover {
+                color: $primario-naranja;
+            }
+        }
+    }
+    /* Fin NavBar */
+}
+
+@media (min-width: 1280px) {
+    /* NavBar */
+    .navBarH {
+        padding: .5em 2em;
+        display: flex;
+        flex-direction: row;
+        align-content: center;
+        align-items: center;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        #collapsibleNavbar {
+            justify-content: center;
+            .navbar-nav {
+                .nav-item {
+                    padding: 3px;
+                    font-size: 32px;
+                }
+            }
+        }
+        .iconos-redes {
+            display: flex;
+            flex-direction: row;
+            .facebook {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .twitter {
+                font-size: 35px;
+                margin: 0 10px;
+            }
+            .youtube {
+                font-size: 35px;
+                margin: 0 0 0 10px;
+            }
+            .iconosRedC {
+                color: $white;
+            }
+            .iconosRedC:hover {
+                color: $primario-naranja;
+            }
+        }
+    }
+    /* Fin NavBar */
+}
