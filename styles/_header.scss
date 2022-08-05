@@ -1,15 +1,15 @@
-@import "variables";
+@import 'variables';
+@import 'mixins';
 
 /*Header*/
 /* NavBar */
 .navBarH {
-    background-color: rgba(39, 39, 39, 0.78);
+    @include container-color;
     padding: 2em;
     /* Logo */
     .navbar-brand {
         .logoH {
-            width: 200px;
-            height: 35px;
+            @include sizes(200px, 35px);
         }
     }
     /*Fin Logo*/
@@ -137,8 +137,7 @@
     /* NavBar */
     .navBarH {
         padding: .5em 2em;
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         align-content: center;
         align-items: center;
         justify-content: space-between;
@@ -184,13 +183,11 @@
 @media (min-width: 1280px) {
     /* NavBar */
     .navBarH {
+        @include flex-row-nowrap;
         padding: .5em 2em;
-        display: flex;
-        flex-direction: row;
         align-content: center;
         align-items: center;
         justify-content: space-between;
-        flex-wrap: nowrap;
         #collapsibleNavbar {
             justify-content: center;
             .navbar-nav {
@@ -201,8 +198,7 @@
             }
         }
         .iconos-redes {
-            display: flex;
-            flex-direction: row;
+            @include flex-row;
             .facebook {
                 font-size: 35px;
                 margin: 0 10px;

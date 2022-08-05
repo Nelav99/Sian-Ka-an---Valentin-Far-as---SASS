@@ -1,0 +1,56 @@
+@import 'variables';
+
+/*mixins con parametros*/
+@mixin sizes($width, $height) {
+    height: $height;
+    width: $width;
+}
+
+@mixin border($border) {
+    border-radius: $border;
+}
+
+@mixin margin($margin) {
+    margin: $margin;
+}
+
+/*mixins sin parametros*/
+@mixin container-color {
+    background-color: $secundario-negro;
+    border-radius: 25px;
+}
+
+@mixin flex-row{
+	display:flex;
+	flex-direction:row;
+}
+
+@mixin flex-row-nowrap {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+@mixin flex-row-wrap {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+@mixin flex-column {
+    display:flex;
+	flex-direction:column;
+}
+
+@mixin flex-column-reverse {
+    display: flex;
+    flex-direction: column-reverse;
+}
+
+@mixin flex-column-nowrap {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+@mixin flex-column-wrap {
+    display: flex;
+    flex-flow: column wrap;
+}

@@ -1,4 +1,5 @@
 @import 'variables';
+@import 'mixins';
 
 /* Footer Home*/
 .footH {
@@ -22,25 +23,20 @@
     color: $white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
-    width: 100%;
-    height: 100%;
+    @include sizes(100%, 100%);
+    @include flex-column-wrap;
+    @include container-color;
     margin: 20px 0 0 0;
-    display: flex;
-    flex-flow: column wrap;
-    background-color: $secundario-negro;
     background-size: 100%;
     .logoText {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-flow: column nowrap;
+        @include sizes(100%, 100%);
+        @include flex-column-nowrap;
         align-items: center;
         justify-content: center;
         align-content: center;
         margin: 10px 0;
         .logoFot {
-            width: 90%;
-            height: 100%;
+            @include sizes(90%, 100%);
             margin: 10px;
         }
         .textfo {
@@ -49,11 +45,8 @@
         }
     }
     .redes {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        @include sizes(100%, 100%);
+        @include flex-column-nowrap;
         align-content: center;
         justify-content: center;
         h3 {
@@ -75,11 +68,8 @@
         }
     }
     .contacto {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        @include sizes(100%, 100%);
+        @include flex-column-nowrap;
         align-content: center;
         justify-content: center;
         h3 {
@@ -91,11 +81,8 @@
         }
     }
     .menuFo {
-        width: 100%;
-        height: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
+        @include sizes(100%, 100%);
+        @include flex-column-nowrap;
         align-content: center;
         justify-content: center;
         h3 {
@@ -115,8 +102,7 @@
         }
     }
     .subFooter {
-        width: 100%;
-        height: 100%;
+        @include sizes(100%, 100%);
         font-size: 14px;
         margin-top: 10px;
         margin-bottom: 10px;
@@ -126,31 +112,26 @@
 }
 /* Fin Footer Paginas*/
 
-@media (max-width: 480px) { 
+@media (max-width: 480px) {
     /*Footer*/
     .footerN {
         color: $white;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: 20px;
-        width: 100%;
-        height: 100%;
-        margin: 20px 0 0 0;
-        display: flex;
-        flex-flow: column wrap;
-        background-color: $secundario-negro;
+        @include sizes(100%, 100%);
+        @include flex-column-wrap;
+        @include container-color;
         background-size: 100%;
+        margin: 20px 0 0 0;
         .logoText {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-flow: column nowrap;
-            align-items: center;
+            @include sizes(100%, 100%);
+            @include flex-column-nowrap;
             justify-content: center;
             align-content: center;
             margin: 10px 0;
             .logoFot {
-                width: 90%;
-                height: 100%;
+                @include sizes(90%, 100%);
+            @include flex-column-nowrap;
                 margin: 10px;
             }
             .textfo {
@@ -159,11 +140,8 @@
             }
         }
         .redes {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+            @include sizes(100%, 100%);
+            @include flex-column-nowrap;
             align-content: center;
             justify-content: center;
             .iFooter {
@@ -189,11 +167,8 @@
             }
         }
         .contacto {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+            @include sizes(100%, 100%);
+            @include flex-column-nowrap;
             align-content: center;
             justify-content: center;
             p {
@@ -202,11 +177,8 @@
             }
         }
         .menuFo {
-            width: 100%;
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-            flex-wrap: nowrap;
+            @include sizes(100%, 100%);
+            @include flex-column-nowrap;
             align-content: center;
             justify-content: center;
             .listFoot {
@@ -220,8 +192,7 @@
             }
         }
         .subFooter {
-            width: 100%;
-            height: 100%;
+            @include sizes(100%, 100%);
             font-size: 14px;
             margin-top: 10px;
             margin-bottom: 10px;
@@ -250,7 +221,7 @@
     /* Fin Footer Home*/
 }
 
-@media (min-width: 768px) and (max-width: 992px) { 
+@media (min-width: 768px) and (max-width: 992px) {
     /* Footer Home*/
     .footH {
         font-size: 14px;
@@ -266,8 +237,7 @@
     .footerN {
         .logoText {
             .logoFot {
-                width: 50%;
-                height: 80%;
+                @include sizes(50%, 80%);
                 margin: 10px;
             }
             .textfo {
@@ -285,7 +255,7 @@
     /* Fin Footer Paginas */
 }
 
-@media (min-width: 992px) and (max-width: 1024px) { 
+@media (min-width: 992px) and (max-width: 1024px) {
     /* Footer Home*/
     .footH {
         margin: 0;
@@ -297,24 +267,31 @@
     /* Fin Footer Home*/
     /* Footer Paginas */
     .footerN {
-        display: flex;
-        flex-flow: row wrap;
+        @include flex-row-wrap;
         justify-content: space-around;
         align-content: flex-start;
         align-items: flex-start;
+        .logoText {
+            .logoFot {
+                @include sizes(50%, 80%);
+                margin: 10px;
+            }
+            .textfo {
+                font-size: 28px;
+            }
+        }
         .redes,
         .contacto,
         .menuFo {
             h3 {
+                font-size: 24px;
                 padding: 0;
                 margin: 20px 0;
             }
         }
         .redes {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             margin: 10px 30px;
             .iFooter {
                 font-size: 55px;
@@ -324,17 +301,14 @@
                     margin: 0 5px;
                 }
                 .icoFootH:hover {
-                    width: auto;
-                    height: auto;
+                    @include sizes(auto, auto);
                     color: $primario-naranja;
                 }
             }
         }
         .contacto {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             p {
@@ -342,10 +316,8 @@
             }
         }
         .menuFo {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             .listFoot {
@@ -360,12 +332,10 @@
             margin: 10px;
             p {
                 text-align: center;
-                display: flex;
+                @include flex-row-nowrap;
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                flex-wrap: nowrap;
-                flex-direction: row;
             }
         }
     }
@@ -378,8 +348,7 @@
         color: $white;
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         margin: 0;
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: center;
         align-items: center;
         .textFoot {
@@ -390,15 +359,13 @@
     /* Fin Footer Home*/
     /* Footer Paginas*/
     .footerN {
-        display: flex;
-        flex-flow: row wrap;
+        @include flex-row-wrap;
         justify-content: space-around;
         align-content: flex-start;
         align-items: flex-start;
         .logoText {
             .logoFot {
-                width: 50%;
-                height: 80%;
+                @include sizes(50%, 80%);
                 margin: 10px;
             }
             .textfo {
@@ -416,10 +383,8 @@
             }
         }
         .redes {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             margin: 10px 30px;
             .iFooter {
                 font-size: 55px;
@@ -429,18 +394,15 @@
                     margin: 0 5px;
                 }
                 .icoFootH:hover {
-                    width: auto;
-                    height: auto;
+                    @include sizes(auto, auto);
                     color: $black;
                     background-color: $primario-naranja;
                 }
             }
         }
         .contacto {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             p {
@@ -448,10 +410,8 @@
             }
         }
         .menuFo {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             .listFoot {
@@ -466,12 +426,10 @@
             margin: 10px;
             p {
                 text-align: center;
-                display: flex;
+                @include flex-row-wrap;
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                flex-wrap: nowrap;
-                flex-direction: row;
             }
         }
     }
@@ -485,8 +443,7 @@
         font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-size: $fontSmallDesktop;
         margin: 0;
-        display: flex;
-        flex-direction: row;
+        @include flex-row;
         justify-content: center;
         align-items: center;
         .textFoot {
@@ -496,15 +453,13 @@
     /* Fin Footer Home*/
     /* Footer Paginas*/
     .footerN {
-        display: flex;
-        flex-flow: row wrap;
+        @include flex-row-wrap;
         justify-content: space-around;
         align-content: flex-start;
         align-items: flex-start;
         .logoText {
             .logoFot {
-                width: 50%;
-                height: 80%;
+                @include sizes(50%, 80%);
                 margin: 10px;
             }
             .textfo {
@@ -522,10 +477,8 @@
             }
         }
         .redes {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             margin: 10px 30px;
             .iFooter {
                 font-size: 55px;
@@ -535,18 +488,15 @@
                     margin: 0 5px;
                 }
                 .icoFootH:hover {
-                    width: auto;
-                    height: auto;
+                    @include sizes(auto, auto);
                     color: $black;
                     background-color: $primario-naranja;
                 }
             }
         }
         .contacto {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             p {
@@ -554,10 +504,8 @@
             }
         }
         .menuFo {
-            width: auto;
-            height: auto;
-            display: flex;
-            flex-direction: column;
+            @include sizes(auto, auto);
+            @include flex-column;
             align-items: flex-start;
             margin: 10px 30px;
             .listFoot {
@@ -572,12 +520,10 @@
             margin: 10px;
             p {
                 text-align: center;
-                display: flex;
+                @include flex-row-wrap;
                 align-content: center;
                 justify-content: center;
                 align-items: center;
-                flex-wrap: nowrap;
-                flex-direction: row;
             }
         }
     }
