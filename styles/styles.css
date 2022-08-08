@@ -76,7 +76,6 @@ html {
 /* NavBar */
 .navBarH {
   background-color: rgba(39, 39, 39, 0.78);
-  border-radius: 25px;
   padding: 2em;
   /* Logo */
   /*Fin Logo*/
@@ -2420,7 +2419,6 @@ html {
   display: flex;
   flex-flow: column wrap;
   background-color: rgba(39, 39, 39, 0.78);
-  border-radius: 25px;
   margin: 20px 0 0 0;
   background-size: 100%;
 }
@@ -2528,7 +2526,6 @@ html {
     display: flex;
     flex-flow: column wrap;
     background-color: rgba(39, 39, 39, 0.78);
-    border-radius: 25px;
     background-size: 100%;
     margin: 20px 0 0 0;
   }
