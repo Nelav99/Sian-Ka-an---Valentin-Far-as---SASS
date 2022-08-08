@@ -4,7 +4,7 @@
 /*Header*/
 /* NavBar */
 .navBarH {
-    @include container-color;
+    @include container-nav-foot;
     padding: 2em;
     /* Logo */
     .navbar-brand {

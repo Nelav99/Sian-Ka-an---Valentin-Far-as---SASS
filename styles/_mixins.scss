@@ -20,6 +20,10 @@
     border-radius: 25px;
 }
 
+@mixin container-nav-foot {
+    background-color: $secundario-negro;
+}
+
 @mixin flex-row{
 	display:flex;
 	flex-direction:row;
